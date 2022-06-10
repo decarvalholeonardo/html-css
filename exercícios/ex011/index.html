@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esee site em vários tamanhos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(min-width: 1050px )" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem flexível">
+    </picture>
+    <!--<picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>--->
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5 </p>
+    <audio src="midia/Jorge Ben-telefone.mp3" controls autoplay loop></audio>
+    <!--MP3 WAV OGG-->
+    <p>Outra maneira:</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/079. Jorge Ben - Pancada de Amor Não Dói.mp3" type="audio/mp3">
+        <source src="midia/079. Jorge Ben - Pancada de Amor Não Dói.wav" type="audio/wav">
+        <source src="midia/079. Jorge Ben - Pancada de Amor Não Dói.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/079. Jorge Ben - Pancada de Amor Não Dói.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+ <audio src=""></audio>
+</body>
+</html>
